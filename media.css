@@ -1,0 +1,577 @@
+@media (max-width:600px) {
+    /* navbar */
+    main{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: aquamarine; */
+        background-color: #f8f8f8;
+        padding-top: 0.1vh;
+        position: relative;
+    }
+    nav{
+        height: 8vh;
+        width: 100vw;
+        margin-top: 2vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+         border: none;
+    }
+    .logo{
+        height: 100%;
+        width: 35vw;
+        font-family: monument;
+        font-size: 4vw;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* position: absolute; */
+        /* border-right: 2px solid black; */
+    }
+    .logo::after{
+        content: "©️";
+        font-size: 2vw;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 100;
+       margin-bottom: 3vh;
+    }
+    .logo::before{
+        content: "model management";
+        font-size: 1.8vw;
+        font-weight: 100;
+        font-family: 'Courier New', Courier, monospace;
+        position: absolute;
+        top: 65%;
+        right: 25%;
+    
+    }
+    nav h2{
+       
+        height: 100%;
+        width: 18vw;
+       
+        font-size: 1.3vw;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        display: none;
+    }
+    nav h2:nth-last-child(1){
+        display: initial;
+        font-size: 4vw;
+        margin-top: 5vh;
+        margin-right: 5vw;
+        border-right: none;
+    }
+    /* center */
+    /* center-part */
+.center-part{
+    height: 80vh;
+    width: 100vw;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+.video-part{
+    height: 75vh;
+    width: 80vw;
+    /* background-color: green ; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+.video-part video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    height: 25vh;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    padding: 0vw 2vw;
+}
+.over1{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 4vw;
+    border-bottom: 0.1vw solid #f8f8f8;
+    /* background-color: aqua; */
+}
+.over1 h1{
+    font-size: 3vw;
+    font-family: monument;
+    color: #f8f8f8;
+    font-weight: 600;
+}
+.over1 h2{
+    padding: 01vw;
+    font-size: 2vw;
+    /* background-color: #f8f8f8; */
+    color: #f8f8f8;
+    border-radius: 50%;
+    border: 0.1vw solid #f8f8f8;
+}
+.over2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 5vw;
+   
+    padding-top: 2vh;
+}
+.over2 h3{
+    font-size: 2.5vw;
+    color: #f8f8f8;
+}
+.over2 i{
+    font-size: 3vh;
+}
+/* scroll-part */
+.scroll-part{
+    height: 16vh;
+    width: 100vw;
+    /* background-color: lightgreen; */
+    background-color: #f8f8f8;
+    /* padding: 1vw; */
+    /* display: flex; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 2vh;
+}
+.scroll-part-container{
+    height: 100%;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    display: inline-block;
+   
+    animation-name: scrolling;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    }
+.scroll-part-container img{
+    height: 10vh;
+    width: 14vw;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 2vh 1vw ;
+    /* object-position: top; */
+}
+@keyframes scrolling {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+
+    }
+}
+/* alphabet */
+.alphabet{
+    height: 8vh;
+    width: 100vw;
+    /* background-color: rgb(90, 209, 90); */
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1vw solid black;
+    border-top: 0.11vw solid black;
+}
+.alphabet h4{
+    text-transform: uppercase ;
+    font-size: 3vw;
+    padding:0.5vh 0.5vw;
+    font-style: italic;
+    font-weight: 500;
+    border-bottom: 0.5px solid black;
+}
+.alphabet h6{
+    text-transform: uppercase ;
+    font-size: 1.8vw;
+    padding:0.5vh 0.5vw;
+    font-style: italic;
+    font-weight: 500;
+    border: 0.5px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    margin: 0vw 0.4vw;
+    transition: all ease 0.5s;
+}
+.page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+        /* padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        */
+
+}
+/* .page2 div{
+    height: 100%;
+    width: 40vw;
+    background-color: burlywood;
+} */
+.page2-left{
+    height: 45%;
+    width: 75vw;
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+.page2-right{
+    height: 45%;
+    width: 75vw;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+}
+.page2-right .up{
+    height: 100%;
+    width: 65%;
+    /* background-color: antiquewhite; */
+    background-image: url(https://media.istockphoto.com/id/491783647/photo/asian-beauty.jpg?s=2048x2048&w=is&k=20&c=r8Yi0u0n74OiS69IdEqLFVhbxyHik0x6mbIaXObmvI4=);
+    background-size: cover;
+    background-position: center;
+}
+.page2-right .down{
+    height: 100%;
+    width:35%;
+    /* background-color: rgb(161, 108, 38); */
+    
+
+}
+.down p{
+    font-size: 2.2vw;
+    margin: 2vw;
+    font-weight: 100;
+    font-family: monument;
+}
+/* page-3 */
+.page3{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+.page3-content{
+    height: 80%;
+    width:80%;
+    /* background-color: gray; */
+    padding: 3vw;
+    /* object-fit: cover; */
+    background-image: url(https://media.istockphoto.com/id/1287397487/photo/beautiful-afro-woman-with-a-flower.jpg?s=2048x2048&w=is&k=20&c=b48bQ0js3MDJoaaSQkJT8rvjprVjeWRHnc9zR2lOaJo=);
+    background-size: cover;
+    background-position: center;
+}
+/* update-part */
+
+.update-part{
+    height: 50vh;
+    width: 100vw;
+    background-color:#f8f8f8;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.update-part>h1{
+    font-size: 4vw;
+    font-family: monument;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+.element{
+    height: 8vh;
+    width:80vw ;
+    border-top: 0.1vw solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.element h3{
+    font-size: 2.3vw;
+    font-weight: 500;
+    width: 8vw;
+    padding-left: 12vw;
+}
+.elem-right{
+    width: 40vw;
+
+}
+.elem-right h4{
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+.elem-right h5{
+    font-size: 1.8vw;
+    font-weight: 400;
+    
+}
+.element img{
+    height: 6vh;
+    width: 8vw;
+    border-radius: 50%;
+    object-fit: cover;
+    object-fit: 0 35%;
+    position: absolute;
+    left: -1%;
+    opacity: 1;
+    transition: all ease 1s;
+}
+
+
+.element:nth-last-child(1){
+    border-bottom: 1px solid black;
+}
+/* page4 */
+.page4{
+    height: 100vh;
+    width: 100vw;
+    background-color:#f8f8f8;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+.page4-left{
+    height: 45%;
+    width: 80vw;
+    
+    /* background-color: aquamarine; */
+}
+.page4-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 15%;
+
+}
+.page4-right{
+    height: 45vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gray; */
+}
+.page4-right div:nth-child(1){
+    height: 30%;
+    width: 100%;
+    /* background-color:red ; */
+}
+.page4-right div:nth-child(2){
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
+    
+}
+.page4-right-1st-msg{
+   padding-top: 1vh;
+   padding-left: 2vw;
+}
+.page4-right-1st-msg h1{
+   font-family: monument;
+   font-size: 4vw;
+   letter-spacing: 0.1vw;
+}
+.page4-right-1st-msg h3{
+    width: 60%;
+    font-weight: 600;
+    font-size: 2.5vw;
+}
+.page4-right-1st-msg p{
+    width: 60%;
+    margin-top: 1vh;
+    font-weight: 500;
+    font-size: 2vw;
+}
+.page4-right-2nd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2vw
+}
+#page4-right-2nd-subdiv1{
+      height: 80%;
+      width: 90%;
+      /* background-image: url(https://media.istockphoto.com/id/2156057713/photo/smiling-man-with-tablet-confident-professional-using-technology.jpg?s=2048x2048&w=is&k=20&c=sakWl2n3nQ8sKP7cFF1Bj81lnOK4IfgXP6eLsJyXH_Q=); */
+     background-image: url(https://images.unsplash.com/photo-1594168087746-d94175b42394?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+      background-size: cover;
+     background-position: 50% 0;
+}
+#page4-right-2nd-subdiv2{
+    height: 80%;
+      width: 70%;
+      background-image: url(https://images.unsplash.com/photo-1582657243548-514667f1e1ac?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-size: cover;
+
+}
+/* MOVE */
+.move{
+    height:fit-content;
+    width: 100vw;
+    background-color: #f8f8f8;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 2vh 0vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+   margin-top: 5vh;
+}
+.move h1{
+    font-size: 5vw;
+    font-family: monument;
+    -webkit-text-stroke: 1px  #000;
+    color: transparent;
+    display: inline-block;
+    margin-right: 1vw;
+    animation-name: marque;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes marque {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 1vh - 4px));
+    }
+}
+footer{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.1vw solid black;
+    margin-top: 15vh;
+   
+
+}
+
+footer h2{
+    height: 100%;
+    width: 20vw;
+     /* background-color: red; */
+    font-size: 1.2vw;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid black;
+    padding-bottom: 20vh;
+    display: none;
+}
+.footer-right-end{
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    /* border-left: 2px solid black; */
+    border: none;
+}
+.footer-right-end h3{
+    height: 50%;
+    width: 100%;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5vh;
+    font-size: 1.2vw;
+    font-weight: 500;
+    display: none;
+}
+.footer-right-end div{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #000; */
+}
+.footer-right-end div h5 i{
+    font-size: 3.5vw;
+    padding: 0.5vh;
+    margin-bottom: 1vh;
+    /* margin-top: 5vh; */
+}
+.footer-right-end div h4{
+    font-size: 3vw;
+    font-weight: 500;
+   
+}
+
+footer .logo{
+    height: 100%;
+    width: 35vw;
+    font-family: monument;
+    font-size: 4vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* position: absolute; */
+    /* border-right: 2px solid black; */
+    
+}
+
+footer .logo::after{
+    content: "©️";
+    font-size: 2.5vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+   margin-bottom: 3vh;
+}
+footer .logo::before{
+    content: "model management";
+    font-size: 2vw;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 60%;
+    right: 22%;
+
+}
+
+
+}

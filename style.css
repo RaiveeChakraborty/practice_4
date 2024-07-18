@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #f8f8f8;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: aquamarine; */
+    background-color: #f8f8f8;
+    padding-top: 0.1vh;
+    position: relative;
+}
+nav{
+    height: 12vh;
+    width: 100vw;
+    
+    /* background-color: black; */
+    margin-top: 3vh;
+    border-top: 0.3vh solid #000;
+    border-bottom: 0.3vh solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+}
+.logo{
+    height: 100%;
+    width: 25vw;
+    font-family: monument;
+    font-size: 2.5vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* position: absolute; */
+    /* border-right: 2px solid black; */
+}
+.logo::after{
+    content: "©️";
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+   margin-bottom: 3vh;
+}
+.logo::before{
+    content: "model management";
+    font-size: 1vw;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 65%;
+    right: 25%;
+
+}
+nav h2{
+    height: 100%;
+    width: 18vw;
+    /* background-color: red; */
+    font-size: 1.3vw;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+}
+nav h2:nth-last-child(1){
+    height: 100%;
+    width: 10vw;
+}
+nav h2:nth-last-child(2){
+    height: 100%;
+    width: 25vw;
+}
+/* center-part */
+.center-part{
+    height: 85vh;
+    width: 100vw;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-part{
+    height: 78vh;
+    width: 90vw;
+    /* background-color: green ; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+.video-part video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    height: 35vh;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    padding: 0vw 2vw;
+}
+.over1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 5vw;
+    border-bottom: 0.1vw solid #f8f8f8;
+}
+.over1 h1{
+    font-size: 2.4vw;
+    font-family: monument;
+    color: #f8f8f8;
+    font-weight: 600;
+}
+.over1 h2{
+    padding: 1.5vw;
+    /* background-color: #f8f8f8; */
+    color: #f8f8f8;
+    border-radius: 50%;
+    border: 0.1vw solid #f8f8f8;
+}
+.over2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 5vw;
+    padding-top: 4vh;
+}
+.over2 h3{
+    font-size: 1.5vw;
+    color: #f8f8f8;
+}
+.over2 i{
+    font-size: 5vh;
+}
+/* scroll-part */
+.scroll-part{
+    height: 40vh;
+    width: 100vw;
+    /* background-color: lightgreen; */
+    background-color: #f8f8f8;
+    padding: 1vw;
+    /* display: flex; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 2vh;
+}
+.scroll-part-container{
+    height: 100%;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    display: inline-block;
+   
+    animation-name: scrolling;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    }
+.scroll-part-container img{
+    height: 30vh;
+    width: 15vw;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 2vh 0.5vw ;
+    /* object-position: top; */
+}
+@keyframes scrolling {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+
+    }
+}
+/* alphabet */
+.alphabet{
+    height: 12vh;
+    width: 100vw;
+    /* background-color: rgb(90, 209, 90); */
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.alphabet h4{
+    text-transform: uppercase ;
+    font-size: 1.5vw;
+    padding:0.5vh 0.5vw;
+    font-style: italic;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+.alphabet h6{
+    text-transform: uppercase ;
+    font-size: 1.2vw;
+    padding:0.5vh 0.5vw;
+    font-style: italic;
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    margin: 0vw 0.4vw;
+    transition: all ease 0.5s;
+}
+.alphabet h6:hover{
+    border: 0.5px solid black;
+    cursor: pointer;
+}
+/* page2 */
+.page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+   
+
+}
+/* .page2 div{
+    height: 100%;
+    width: 40vw;
+    background-color: burlywood;
+} */
+.page2-left{
+    height: 100%;
+    width: 45vw;
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+.page2-right{
+    height: 100%;
+    width: 30vw;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+.page2-right .up{
+    height: 75%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    background-image: url(https://media.istockphoto.com/id/491783647/photo/asian-beauty.jpg?s=2048x2048&w=is&k=20&c=r8Yi0u0n74OiS69IdEqLFVhbxyHik0x6mbIaXObmvI4=);
+    background-size: cover;
+}
+.page2-right .down{
+    height: 30%;
+    width: 100%;
+    /* background-color: rgb(161, 108, 38); */
+    
+
+}
+.down p{
+    font-size: 1vw;
+    margin: 2vw;
+    font-weight: 100;
+    font-family: monument;
+}
+/* page-3 */
+.page3{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+.page3-content{
+    height: 80%;
+    width:80%;
+    /* background-color: gray; */
+    padding: 5vw;
+    /* object-fit: cover; */
+    background-image: url(https://media.istockphoto.com/id/1287397487/photo/beautiful-afro-woman-with-a-flower.jpg?s=2048x2048&w=is&k=20&c=b48bQ0js3MDJoaaSQkJT8rvjprVjeWRHnc9zR2lOaJo=);
+    background-size: cover;
+}
+
+
+
+
+
+/* update-part */
+
+.update-part{
+    height: 90vh;
+    width: 100vw;
+    background-color:#f8f8f8;
+    padding: 5vw;
+    
+}
+.update-part>h1{
+    font-size: 2vw;
+    font-family: monument;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+.element{
+    height: 15vh;
+    width:90vw ;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.element h3{
+    font-size: 1.3vw;
+    font-weight: 500;
+    width: 8vw;
+}
+.elem-right{
+    width: 40vw;
+
+}
+.elem-right h4{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.elem-right h5{
+    font-size: 1vw;
+    font-weight: 400;
+    
+}
+.element img{
+    height: 12vh;
+    width: 6vw;
+    border-radius: 50%;
+    object-fit: cover;
+    object-fit: 0 35%;
+    position: absolute;
+    left: 10%;
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.element:hover img{
+   opacity: 1;
+   left:30%;
+   
+}
+
+.element:nth-last-child(1){
+    border-bottom: 1px solid black;
+}
+/* page4 */
+.page4{
+    height: 100vh;
+    width: 100vw;
+    background-color:#f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+.page4-left{
+    height: 90vh;
+    width: 35vw;
+    
+    /* background-color: aquamarine; */
+}
+.page4-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 15%;
+
+}
+.page4-right{
+    height: 90vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gray; */
+}
+.page4-right div:nth-child(1){
+    height: 35%;
+    width: 100%;
+    /* background-color:red ; */
+}
+.page4-right div:nth-child(2){
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: aqua; */
+    
+}
+.page4-right-1st-msg{
+   padding-top: 2vh;
+   padding-left: 2vw;
+}
+.page4-right-1st-msg h1{
+   font-family: monument;
+   font-size: 2vw;
+   letter-spacing: 0.1vw;
+}
+.page4-right-1st-msg h3{
+    width: 60%;
+    font-weight: 600;
+    font-size: 1vw;
+}
+.page4-right-1st-msg p{
+    width: 60%;
+    margin-top: 1vh;
+    font-weight: 500;
+    font-size: 0.8vw;
+}
+.page4-right-2nd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2vw
+}
+#page4-right-2nd-subdiv1{
+      height: 80%;
+      width: 90%;
+      /* background-image: url(https://media.istockphoto.com/id/2156057713/photo/smiling-man-with-tablet-confident-professional-using-technology.jpg?s=2048x2048&w=is&k=20&c=sakWl2n3nQ8sKP7cFF1Bj81lnOK4IfgXP6eLsJyXH_Q=); */
+     background-image: url(https://images.unsplash.com/photo-1594168087746-d94175b42394?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+      background-size: cover;
+     background-position: 50% 0;
+}
+#page4-right-2nd-subdiv2{
+    height: 80%;
+      width: 70%;
+      background-image: url(https://images.unsplash.com/photo-1582657243548-514667f1e1ac?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-size: cover;
+
+}
+
+/* MOVE */
+.move{
+    height:fit-content;
+    width: 100vw;
+    background-color: #f8f8f8;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 2vh 0vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+   margin-top: 5vh;
+}
+.move h1{
+    font-size: 2vw;
+    font-family: monument;
+    -webkit-text-stroke: 1px  #000;
+    color: transparent;
+    display: inline-block;
+    margin-right: 1vw;
+    animation-name: marque;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes marque {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 1vh - 4px));
+    }
+}
+
+
+
+footer{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid black;
+    margin-top: 15vh;
+   
+
+}
+
+footer h2{
+    height: 100%;
+    width: 20vw;
+     /* background-color: red; */
+    font-size: 1.2vw;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid black;
+    padding-bottom: 20vh;
+}
+.footer-right-end{
+    height: 100%;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid black;
+}
+.footer-right-end h3{
+    height: 50%;
+    width: 100%;
+    border-bottom: 1.5px solid rgb(36, 36, 36);
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5vh;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.footer-right-end div{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #000; */
+}
+.footer-right-end div h5 i{
+    font-size: 1.2vw;
+    padding: 0.5vh;
+    margin-bottom: 1vh;
+    /* margin-top: 5vh; */
+}
+.footer-right-end div h4{
+    font-weight: 500;
+   
+}
+footer .logo::before{
+    content: "model management";
+    font-size: 1vw;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 56%;
+    right: 25%;
+
+}
